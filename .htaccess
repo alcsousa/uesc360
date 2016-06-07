@@ -1,0 +1,5 @@
+AddType image/svg+xml svg svgz
+AddEncoding gzip svgz
+RewriteEngine on
+RewriteCond $1 !^(index\.php|assets|uploads|fontes|bots\.txt)
+RewriteRule ^(.*)$ index.php/$1 [L]
